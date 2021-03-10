@@ -22,7 +22,8 @@
         </div>
         <main>
             <div class="row">
-                <div id="menu" class="col-md-2 col-sm-6 bg-danger img-rounded">
+                <!-- push >>>  pull <<<  // offset >>> 미는 것 뒤에 있는 요소가 같이 밀림 -->
+                <div id="menu" class="col-md-2 col-sm-4 col-md-push-10 bg-danger img-rounded">
                     <ul  class="list-unstyled text-center text-uppercase ">
                         <li><a href="#">파스타</a></li>
                         <li><a href="#">피자</a></li>
@@ -30,11 +31,28 @@
                         <li><a href="#">탄산음료</a></li>
                     </ul>
                 </div>
-                <div class="text-center bg-warning col-md-8 col-sm-6 img-rounded">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt pariatur ipsam, soluta excepturi adipisci optio odit aliquam natus eveniet mollitia animi. Illum, ipsam nobis corporis non ex reiciendis repellat distinctio!</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt pariatur ipsam, soluta excepturi adipisci optio odit aliquam natus eveniet mollitia animi. Illum, ipsam nobis corporis non ex reiciendis repellat distinctio!</p>
+                <div class="col-md-6 col-sm-6 col-md-offset-1 col-sm-offset-2 text-center bg-warning img-rounded">
+                  <div class="row">
+                    <div class="col-lg-6 bg-success">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo aut sed, ullam velit, totam amet sint consequatur commodi corrupti eos dolores suscipit cum, reiciendis provident non nesciunt odio quis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo aut sed, ullam velit, totam amet sint consequatur commodi corrupti eos dolores suscipit cum, reiciendis provident non nesciunt odio quis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo aut sed, ullam velit, totam amet sint consequatur commodi corrupti eos dolores suscipit cum, reiciendis provident non nesciunt odio quis.</p>
+                        
+                    </div>
+                    <div class="col-lg-6 bg-warning">
+                       <div class="row">
+                        <div class="col-lg-12 bg-primary">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo aut sed, ullam velit, totam amet sint consequatur commodi corrupti eos dolores suscipit cum, reiciendis provident non nesciunt odio quis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo aut sed, ullam velit, totam amet sint consequatur commodi corrupti eos dolores suscipit cum, reiciendis provident non nesciunt odio quis.</p>
+                        </div>
+                        <div class="col-lg-12 bg-warning">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo aut sed, ullam velit, totam amet sint consequatur commodi corrupti eos dolores suscipit cum, reiciendis provident non nesciunt odio quis.</p>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="bg-success col-md-2 col-sm-12 img-rounded">
+                <div class="col-md-2 col-sm-12 col-md-offset-1 col-md-pull-10 bg-success img-rounded">
                     <ul class="text-center  list-unstyled">
                         <li>예약자 명단</li>
                         <li>홍길동</li>
@@ -62,7 +80,7 @@
         margin: 0;
         padding: 0;
     }
-    @media (min-width: 768px) and (max-width: 993px) { 
+    @media (min-width: 768px) and (max-width: 991px) { 
         #menu {
             height: 180px;
         }
